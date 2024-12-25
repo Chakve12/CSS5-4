@@ -10,6 +10,10 @@
     background: #F1EBFF;
 }
 
+body > div {
+    display: flex;
+}
+
 .header_wrap>div {
     padding: 20px 0;
 }
@@ -17,10 +21,6 @@
 .navb ul li a {
     transition: 0.6s ease;
     cursor: cell;
-}
-
-.navb ul li a:hover {
-    color: #00e4ff;
 }
 
 .navb ul {
@@ -36,7 +36,7 @@
     font-size: 16px;
 }
 
-#buy {
+.navb a:hover {
     color: #40D;
     font-weight: 700;
 }
@@ -44,15 +44,18 @@
 .main_container {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
-.inside_content {
+.main_content {
     display: flex;
     flex-direction: column;
     gap: 64px;
     padding-top: 64px;
     padding-bottom: 193px;
 }
+
+
 
 /* cards */
 
@@ -68,6 +71,8 @@ section {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 .house_wrap {
@@ -84,12 +89,15 @@ section {
     display: flex;
     align-items: center;
     gap: 12px;
+    cursor: cell;
 }
 
 .search_logo {
     padding: 16px 24px;
     border-radius: 16px;
     background: #40D;
+    cursor: cell;
+    flex-wrap: wrap;
 }
 
 .description {
